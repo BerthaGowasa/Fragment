@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/yuhu"
+        android:layout_width="match_parent"
+        android:layout_height="300sp"
+        android:src="@drawable/bertha"
+
+        />
+    <TextView
+        android:id="@+id/namaaa"
+        android:layout_width="400dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Nama : Bertha Olivera L. Gowasa, 124180009"
+        android:textSize="25sp" />
+
+</LinearLayout>
