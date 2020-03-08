@@ -11,16 +11,20 @@
         android:id="@+id/yuhu"
         android:layout_width="match_parent"
         android:layout_height="300sp"
-        android:src="@drawable/bertha"
-
-        />
+        android:src="@drawable/bertha" />
     <TextView
         android:id="@+id/namaaa"
-        android:layout_width="400dp"
-        android:layout_height="match_parent"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="30dp"
-        android:text="Nama : Bertha Olivera L. Gowasa, 124180009"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Nama : Bertha Olivera L. Gowasa"
         android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIM : 124180009"
+        android:gravity="center"
+        android:textSize="25sp"/>
 
 </LinearLayout>

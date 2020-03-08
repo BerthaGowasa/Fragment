@@ -47,14 +47,7 @@ public class HeroesAdapter extends RecyclerView.Adapter<HeroesAdapter.ViewHolder
     public void onBindViewHolder(@NonNull HeroesAdapter.ViewHolder viewHolder, final int position) {
         Glide.with(context).load(getHeroList().get(position).getHeroImage()).into(viewHolder.imageView);
         viewHolder.tvnama.setText(getHeroList().get(position).getHeroName());
-        viewHolder.btnLihat.setText(getHeroList().get(position).getHeroDetail());
-        viewHolder.imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(context, "Ini Pahlawan  : " + getHeroList().get(position).getHeroName(), Toast.LENGTH_SHORT).show();
-            }
 
-        });
         viewHolder.btnLihat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,6 +56,7 @@ public class HeroesAdapter extends RecyclerView.Adapter<HeroesAdapter.ViewHolder
                 intent.putExtra("name", getHeroList().get(position).getHeroName());
                 intent.putExtra("detail", getHeroList().get(position).getHeroDetail());
                 context.startActivity(intent);
+                Toast.makeText(context, "Ini Pahlawan  : " + getHeroList().get(position).getHeroName(), Toast.LENGTH_SHORT).show();
             }
 
         });
